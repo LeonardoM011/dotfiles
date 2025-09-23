@@ -1,0 +1,14 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+#QT_QPA_PLATFORMTHEME=qt5ct
+#QT_STYLE_OVERRIDE=kvantum
+BROWSER=firefox
+EDITOR=nvim
+
+# f206-dobit
+
+JAVA_HOME=/home/leonardom/.jdks/azul-17.0.15
+DB2_VOLUME=/home/leonardom/Dev/database/db2_volume

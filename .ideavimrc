@@ -1,0 +1,19 @@
+let mapleader=" "
+set hlsearch
+set incsearch
+set peekaboo
+set which-key
+set highlightedyank
+set exchange
+set timeoutlen=35000
+Plug 'easymotion/vim-easymotion'
+let g:WhichKeyDesc_easymotion = "<leader><leader> EasyMotion"
+Plug 'preservim/nerdtree'
+Plug 'machakann/vim-highlightedyank'
+map <C-c> <Esc>
+nnoremap <leader>h :noh<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>f <Plug>(easymotion-f)
+nnoremap <leader>s <Plug>(easymotion-s)
+nnoremap <leader>t <Plug>(easymotion-t)
+nnoremap <leader>w <Plug>(easymotion-w)
