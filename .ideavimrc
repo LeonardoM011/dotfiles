@@ -13,7 +13,7 @@ Plug 'machakann/vim-highlightedyank'
 map <C-c> <Esc>
 nnoremap <leader>h :noh<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <leader>f <Plug>(easymotion-f)
-nnoremap <leader>s <Plug>(easymotion-s)
-nnoremap <leader>t <Plug>(easymotion-t)
-nnoremap <leader>w <Plug>(easymotion-w)
+nmap <leader>f <Plug>(easymotion-bd-f)<CR>
+nmap <leader>s <Plug>(easymotion-bd-s)<CR>
+nmap <leader>t <Plug>(easymotion-bd-t)<CR>
+nmap <leader>w <Plug>(easymotion-bd-w)<CR>
