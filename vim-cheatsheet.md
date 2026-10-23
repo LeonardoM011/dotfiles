@@ -217,6 +217,7 @@ Block mode (`<C-v>`) edits a column on many lines at once: select it, press `I` 
 | `:` | command over the selected lines (`:'<,'>`) |
 | `*` | search for the selected text |
 | `S` | flash select: pick an enclosing code block by label |
+| `gsa{char}` | surround the selection with quotes or brackets (IntelliJ only; `S` is flash) |
 | `<C-Space>` / `<BS>` | grow / shrink the selection by code structure (IntelliJ) |
 
 ## Insert mode
@@ -320,6 +321,7 @@ Press `Space` and wait: which-key lists everything under it. Groups: `b` buffer,
 | `<leader>tr` / `<leader>tt` / `<leader>td` | run nearest test / tests in file / debug nearest |
 | `<leader>tl` / `<leader>tf` | rerun last / rerun failed |
 | `<leader>oo` / `<leader>oO` / `<leader>os` | run / pick a run configuration / stop |
+| `<leader>ou` | update the running app, as its run configuration's "On Update" setting says |
 | `<leader>ow` | Services window (running Spring Boot apps) |
 | `<leader>oe` / `<leader>oB` / `<leader>op` | Endpoints / Spring Beans / active profiles |
 | `<leader>oR` | reload Maven/Gradle projects |

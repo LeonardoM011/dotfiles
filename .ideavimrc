@@ -84,7 +84,7 @@ set anyobject
 
 " gc{motion} / gcc
 Plug 'tpope/vim-commentary'
-" ys{motion}{char}, cs{old}{new}, ds{char}
+" ys{motion}{char}, cs{old}{new}, ds{char}; visual gsa{char} (S is flash)
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-highlightedyank'
 " Visual * / # search for the selection, like Neovim
@@ -260,6 +260,11 @@ nmap ; <Action>(flash.repeat)
 xmap ; <Action>(flash.repeat)
 nmap , <Action>(flash.repeat_backward)
 xmap , <Action>(flash.repeat_backward)
+
+" vim-surround only claims visual S if it's free, and flash took it above, so
+" surround a selection with gsa (mini.surround's key in LazyVim).
+let g:WhichKeyDesc_g_sa = "gsa Add Surrounding"
+xmap gsa <Plug>VSurround
 
 
 " ============================================================================
@@ -579,6 +584,8 @@ let g:WhichKeyDesc_oO = "<leader>oO Run Configuration..."
 nmap <leader>oO <Action>(ChooseRunConfiguration)
 let g:WhichKeyDesc_or = "<leader>or Rerun"
 nmap <leader>or <Action>(Rerun)
+let g:WhichKeyDesc_ou = "<leader>ou Update Running App"
+nmap <leader>ou <Action>(UpdateRunningApplication)
 let g:WhichKeyDesc_os = "<leader>os Stop"
 nmap <leader>os <Action>(Stop)
 let g:WhichKeyDesc_ol = "<leader>ol Run Output"
